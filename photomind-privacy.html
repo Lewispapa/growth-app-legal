@@ -120,101 +120,195 @@
       <h1>PhotoMind Smart Photos Privacy Policy</h1>
 
       <p class="meta">
-        Effective date: August 22, 2026<br>
+        Effective date: August 29, 2026<br>
         App: PhotoMind Smart Photos<br>
-        Bundle identifier: dev.photomind.PhotoMind<br>
+        Platforms: macOS, iPhone, iPad<br>
+        Bundle identifier (macOS): dev.photomind.PhotoMind<br>
+        Bundle identifier (iOS / iPadOS): dev.photomind.PhotoMind.iOS<br>
         Developer: Chris Wu<br>
         Contact: <a href="mailto:chris5100703@icloud.com">chris5100703@icloud.com</a>
       </p>
 
       <div class="notice">
-        <strong>PhotoMind does not upload, transmit, or store users' photos, videos, or files on external servers.</strong><br>
-        All photo analysis, duplicate detection, similarity detection, and organization planning are performed locally on the user's Mac.
+        <strong>PhotoMind does not upload, transmit, or store users' photos, videos, thumbnails, metadata, hashes, analysis results, review decisions, or cleanup plans on PhotoMind servers or third-party analysis servers.</strong><br>
+        All photo analysis, duplicate detection, similarity detection, review, and cleanup planning are performed locally on your device.
       </div>
 
       <h2>1. Introduction</h2>
       <p>
-        PhotoMind Smart Photos ("PhotoMind") is a local-first macOS app that helps users understand and organize their personal photo and video collections. This Privacy Policy explains how PhotoMind accesses and processes information when you use the app.
+        PhotoMind Smart Photos ("PhotoMind") is a local-first app for macOS, iPhone, and iPad that helps users understand and organize their personal photo and video collections. This Privacy Policy explains how PhotoMind accesses and processes information when you use the app on any supported platform.
       </p>
       <p>
-        PhotoMind does not require an account or sign-in. It does not provide cloud storage or cloud-based photo analysis.
+        PhotoMind does not require an account or sign-in. It does not provide cloud storage, cloud-based photo analysis, or cloud AI processing of your media.
+      </p>
+      <p>
+        Because macOS and iOS/iPadOS provide different system frameworks for media access, this policy describes each platform separately where the behavior differs.
       </p>
 
       <h2>2. Information We Do Not Collect</h2>
       <p>PhotoMind does not collect or transmit:</p>
       <ul>
         <li>Your photos, videos, or other files;</li>
-        <li>File names, folder paths, thumbnails, metadata, hashes, or analysis results;</li>
+        <li>File names, folder paths, media identifiers, thumbnails, metadata, hashes, or analysis results;</li>
         <li>Your name, email address, phone number, or other contact information;</li>
         <li>Location data, contacts, advertising identifiers, or browsing history;</li>
         <li>Usage analytics, advertising data, or tracking data; or</li>
         <li>Payment card details, Apple ID credentials, or account passwords.</li>
       </ul>
       <p>
-        PhotoMind does not use advertising SDKs, third-party analytics SDKs, cross-app tracking, or data brokers.
+        PhotoMind does not use advertising SDKs, third-party analytics SDKs, cross-app tracking, data brokers, social login, or remote user accounts.
       </p>
 
       <h2>3. Local Photo and Video Processing</h2>
       <p>
-        PhotoMind processes photos and videos only on your Mac. Local processing may include file scanning, metadata reading, thumbnail generation, exact duplicate detection, visual similarity detection, photo relationship analysis, review decisions, and organization planning.
+        PhotoMind processes photos and videos only on the device where the app is running. Local processing may include library or folder scanning, metadata reading, thumbnail or local representation generation, exact duplicate detection, visual similarity detection, review presentation, keeper selection, and cleanup planning.
       </p>
       <p>
-        PhotoMind does not send photos, videos, thumbnails, metadata, hashes, similarity results, review decisions, or organization plans to PhotoMind servers or any external analysis service.
+        PhotoMind does not send photos, videos, thumbnails, metadata, hashes, fingerprints, similarity results, review decisions, or cleanup plans to PhotoMind servers or to any external analysis service.
       </p>
 
-      <h2>4. File Access Permission</h2>
+      <h2>4. macOS: File and Folder Access</h2>
       <p>
-        PhotoMind accesses only folders you choose through the macOS file selection panel. macOS provides this access through its sandbox and security-scoped permissions. PhotoMind stores a local security-scoped bookmark so it can reopen an authorized folder after you relaunch the app.
+        On macOS, PhotoMind accesses only folders or disks you choose through the macOS file selection panel. macOS provides this access through its sandbox and security-scoped permissions. PhotoMind stores a local security-scoped bookmark so it can reopen an authorized folder after you relaunch the app.
       </p>
       <p>
-        PhotoMind reads files in authorized folders to scan and analyze your media. PhotoMind does not automatically remove or organize files. If you explicitly review and confirm an organization plan, PhotoMind may move the selected files into a dedicated <strong>PhotoMind Recycle</strong> folder using its reversible organization workflow. You remain in control of each organization action and can use PhotoMind's available restore controls while the corresponding recycle files remain available.
+        PhotoMind reads photos and videos in authorized folders to perform local scanning, exact duplicate detection, visual similarity detection, review, and organization planning. PhotoMind does not automatically remove or organize files.
       </p>
       <p>
-        You can revoke access by changing macOS permissions, removing the folder authorization, or uninstalling the app. Revoking access does not modify the original files in your selected folders.
-      </p>
-
-      <h2>5. Data Storage and Security</h2>
-      <p>
-        PhotoMind stores its catalog, local indexes, thumbnails, hashes, analysis results, review decisions, organization history, preferences, and limited usage counts locally in the app's sandboxed storage on your Mac. Limited usage records describe app stages, durations, and item counts only; they do not contain file names, paths, or photo content and are never transmitted.
+        If you explicitly review and confirm an organization plan, PhotoMind may move the selected files into a dedicated <strong>PhotoMind Recycle</strong> folder using its reversible organization workflow. You remain in control of each organization action and can use PhotoMind's available restore controls while the corresponding recycle files remain available.
       </p>
       <p>
-        Local diagnostic reports contain app status and counts rather than photo content or full file paths. PhotoMind does not send diagnostic reports automatically. A report leaves the app only if you deliberately copy or export it and then choose to share it yourself.
-      </p>
-      <p>
-        You can remove PhotoMind's local indexes and settings by deleting the app and its local app data. This does not automatically delete your original photo and video folders or files already placed in PhotoMind Recycle.
+        You can revoke access on macOS by changing file access permissions, removing the folder authorization, or uninstalling the app. Revoking access does not modify the original files in your selected folders.
       </p>
 
-      <h2>6. Purchase Information (Apple StoreKit)</h2>
+      <h2>5. iPhone and iPad: Photos Library Access</h2>
       <p>
-        PhotoMind may offer a one-time PhotoMind Pro purchase through Apple StoreKit. Apple processes the purchase, payment, receipt, and purchase restoration through the App Store. PhotoMind uses StoreKit product and verified entitlement status only to display purchase information and unlock eligible Pro functionality.
+        On iPhone and iPad, PhotoMind uses Apple Photos (PhotoKit) to access the photo library content you have authorized. PhotoMind does not browse or index media outside the access you grant.
       </p>
+      <p>Within the scope you authorize, PhotoMind may read only what it needs for local analysis, which can include:</p>
+      <ul>
+        <li>Photos and videos;</li>
+        <li>Media metadata such as creation and modification information;</li>
+        <li>Dimensions and other media characteristics;</li>
+        <li>Locally generated fingerprints and hashes; and</li>
+        <li>Thumbnails or other local representations required for analysis and review.</li>
+      </ul>
+      <p>This information is used only on your device, for:</p>
+      <ul>
+        <li>Library scanning and indexing;</li>
+        <li>Exact duplicate detection for photos and videos;</li>
+        <li>Visual similarity detection for photos;</li>
+        <li>Review presentation and keeper selection;</li>
+        <li>Cleanup planning; and</li>
+        <li>Local history and Free quota state.</li>
+      </ul>
       <p>
-        PhotoMind does not receive or store your payment card number, Apple ID password, or other payment credentials. Apple's handling of App Store transactions is governed by Apple's own terms and privacy policy.
+        None of this information is uploaded to PhotoMind servers or to any third-party analysis service.
       </p>
 
-      <h2>7. Third-party Services</h2>
+      <h2>6. Cleanup and Deletion Behavior</h2>
+      <p>
+        <strong>PhotoMind never automatically deletes photos or videos on any platform.</strong> Cleanup happens only after you review results, make keep or remove decisions, review the cleanup preview, and explicitly confirm.
+      </p>
+      <p>
+        On <strong>macOS</strong>, confirmed organization moves the selected files into the PhotoMind Recycle folder, where PhotoMind's available restore controls apply while those recycle files remain available.
+      </p>
+      <p>
+        On <strong>iPhone and iPad</strong>, after you explicitly confirm, PhotoMind asks Apple Photos (PhotoKit) to perform the removal, and iOS may present its own confirmation. Items removed from the Photos library are handled by Apple Photos and may remain available in Apple's Recently Deleted album according to system behavior. PhotoMind does not create its own copies of your photos on iPhone or iPad and does not provide its own restore mechanism there; recovery is handled by Apple Photos.
+      </p>
+
+      <h2>7. Permission Control and Revocation</h2>
+      <p>
+        On <strong>macOS</strong>, you can change or withdraw the file and folder access you previously granted, remove a folder authorization, or uninstall the app.
+      </p>
+      <p>
+        On <strong>iPhone and iPad</strong>, you can change or revoke PhotoMind's photo library authorization at any time through the system Settings app, under the privacy and photo access settings for PhotoMind, or through any photo access controls iOS presents for the app. You can also uninstall the app.
+      </p>
+      <p>
+        Revoking access does not modify photos or videos that remain in your library or in your selected folders.
+      </p>
+
+      <h2>8. Data Storage and Security</h2>
+      <p>PhotoMind may store the following locally, in the app's sandboxed storage on your device:</p>
+      <ul>
+        <li>Catalog and index information;</li>
+        <li>Hashes and fingerprints;</li>
+        <li>Thumbnails or other derived local representations;</li>
+        <li>Analysis results;</li>
+        <li>Review decisions;</li>
+        <li>Cleanup and history records;</li>
+        <li>Preferences;</li>
+        <li>Free quota usage and charged-item state; and</li>
+        <li>Verified StoreKit entitlement state as needed to unlock purchased functionality.</li>
+      </ul>
+      <p>
+        This data stays on your device and is not uploaded to PhotoMind servers.
+      </p>
+      <p>
+        On macOS, PhotoMind also keeps limited usage records that describe app stages, durations, and item counts only; they do not contain file names, paths, or photo content and are never transmitted. Local diagnostic reports on macOS contain app status and counts rather than photo content or full file paths. PhotoMind does not send diagnostic reports automatically. A report leaves the app only if you deliberately copy or export it and then choose to share it yourself.
+      </p>
+      <p>
+        You can remove PhotoMind's local indexes and settings by deleting the app and its local app data. This does not automatically delete your original photos and videos, files already placed in PhotoMind Recycle on macOS, or items in Apple's Recently Deleted album on iPhone and iPad.
+      </p>
+
+      <h2>9. Purchase Information (Apple StoreKit)</h2>
+      <p>
+        PhotoMind Pro may be offered as a one-time, non-consumable purchase through Apple StoreKit. Apple handles payment, App Store account and payment credentials, and transaction processing.
+      </p>
+      <p>PhotoMind uses only the Apple-provided product and verified entitlement information needed to:</p>
+      <ul>
+        <li>Display purchase information;</li>
+        <li>Unlock Pro functionality; and</li>
+        <li>Restore eligible purchases.</li>
+      </ul>
+      <p>
+        PhotoMind does not receive or store your payment card number, Apple ID password, or other payment credentials. Purchases and entitlements are associated with the app/platform product through which they were purchased, subject to Apple's App Store behavior. Apple's handling of App Store transactions is governed by Apple's own terms and privacy policy.
+      </p>
+
+      <h2>10. Third-party Services</h2>
       <p>
         PhotoMind does not use third-party cloud photo processing, advertising services, analytics services, social login, or cloud storage. The only external service used by the app is Apple's App Store and StoreKit for product information, purchases, entitlement verification, and purchase restoration.
       </p>
-      <p>
-        PhotoMind also uses Apple system frameworks for local media and image processing. These frameworks run as part of macOS and are not used to upload your media to PhotoMind or third-party servers.
-      </p>
-
-      <h2>8. User Rights</h2>
-      <p>You remain in control of your files and local PhotoMind data. You may:</p>
+      <p>PhotoMind also relies on Apple system frameworks provided by the operating system:</p>
       <ul>
-        <li>Choose which folders PhotoMind may access;</li>
-        <li>Decline or revoke folder access;</li>
-        <li>Review and confirm organization decisions before files are moved;</li>
-        <li>Use available restore controls for eligible PhotoMind Recycle items;</li>
-        <li>Delete PhotoMind's local app data and indexes from your Mac; and</li>
-        <li>Manage or request support for App Store purchases through Apple.</li>
+        <li>macOS: file system and sandbox frameworks, and image and media frameworks;</li>
+        <li>iPhone and iPad: Apple Photos (PhotoKit), and image and media frameworks;</li>
+        <li>All platforms: StoreKit and the App Store.</li>
       </ul>
       <p>
-        Because PhotoMind has no account system and does not maintain user data on an external server, there is no remote account profile or cloud photo collection for PhotoMind to access, export, or delete.
+        These frameworks run as part of the operating system. Using them does not mean PhotoMind uploads your photos or videos to PhotoMind or to any third-party analysis service.
       </p>
 
-      <h2>9. Contact Information</h2>
+      <h2>11. User Rights</h2>
+      <p>You remain in control of your media and your local PhotoMind data. On all supported platforms you may:</p>
+      <ul>
+        <li>Control the file or photo access you grant to PhotoMind;</li>
+        <li>Decline or revoke that access at any time;</li>
+        <li>Review results and confirm decisions before any cleanup is performed;</li>
+        <li>Manage or delete PhotoMind's local app data;</li>
+        <li>Uninstall the app; and</li>
+        <li>Manage or request support for App Store purchases through Apple.</li>
+      </ul>
+      <p>On <strong>macOS</strong> specifically, you may also:</p>
+      <ul>
+        <li>Choose which folders or disks PhotoMind may access; and</li>
+        <li>Use available restore controls for eligible PhotoMind Recycle items.</li>
+      </ul>
+      <p>On <strong>iPhone and iPad</strong> specifically, you may also:</p>
+      <ul>
+        <li>Change or revoke the Photos library authorization granted to PhotoMind; and</li>
+        <li>Recover recently removed items through Apple Photos' Recently Deleted album, according to system behavior.</li>
+      </ul>
+      <p>
+        Because PhotoMind has no remote account system and maintains no PhotoMind cloud photo library, there is no remote account profile or server-side photo collection held by PhotoMind for us to access, export, or delete on your behalf.
+      </p>
+
+      <h2>12. App Store Privacy Disclosures</h2>
+      <p>
+        PhotoMind's App Store privacy disclosures state that no data is collected. Accessing and processing your photos locally on your device, as described in this policy, is not data collection by PhotoMind: that content is never transmitted to PhotoMind or to any third-party analysis service, and PhotoMind uses no advertising SDKs, no third-party analytics SDKs, no tracking, and no remote user accounts.
+      </p>
+
+      <h2>13. Contact Information</h2>
       <p>
         If you have questions about this Privacy Policy or PhotoMind's privacy practices, contact:
       </p>
@@ -223,9 +317,9 @@
         <li>Email: <a href="mailto:chris5100703@icloud.com">chris5100703@icloud.com</a></li>
       </ul>
 
-      <h2>10. Changes to This Policy</h2>
+      <h2>14. Changes to This Policy</h2>
       <p>
-        This policy may be updated if PhotoMind's features or privacy practices change. The effective date at the top of this page will identify the latest version. If PhotoMind later introduces any data collection or external service, this policy and the App Store privacy disclosures will be updated before that change is released.
+        This policy may be updated if PhotoMind's features or privacy practices change. The effective date at the top of this page will identify the latest version. If PhotoMind later introduces any data collection, external service, or change to its data practices, this policy and the App Store privacy disclosures will be updated before that change is released.
       </p>
 
       <p class="footer">
